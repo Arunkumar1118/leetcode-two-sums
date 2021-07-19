@@ -1,0 +1,14 @@
+class Solution {
+    public int arrangeCoins(int n) {
+        int stair = 0;
+        while(n>0)
+        {
+            stair++;
+            n = n-stair;
+        }
+        if(n==0)
+            return stair;
+        else
+            return stair-1;
+    }
+}
